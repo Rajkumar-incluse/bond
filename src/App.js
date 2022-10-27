@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Loader from './comp/Common/Loader';
 
+const ForgetPass = lazy(() => import("./comp/Auth/ForgetPass"))
 const Signup = lazy(() => import("./comp/Auth/Signup"))
 const Login = lazy(() => import("./comp/Auth/Login"))
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="forget-pass" element={<ForgetPass />} />
       </Routes>
     </Suspense>
   )
