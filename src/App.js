@@ -1,11 +1,19 @@
+import { lazy, Suspense } from 'react';
+import { Route, Routes } from "react-router-dom";
+
+import Loader from './comp/Common/Loader';
+
+const Signup = lazy(() => import("./comp/Auth/Signup"))
+const Login = lazy(() => import("./comp/Auth/Login"))
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <Suspense fallback={<Loader wrapperCls='h-screen' />}>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+      </Routes>
+    </Suspense>
   )
 }
 
