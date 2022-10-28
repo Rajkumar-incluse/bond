@@ -18,13 +18,13 @@
   }
 
   body ::-webkit-scrollbar-thumb {
-    background-color: #DBDBDE;
+    background-color: rgba(255,255,255,.3);
     border-radius: 8px;
     box-shadow: none;
   }
 
   body ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(66, 66, 66, 0.4);
+    background: rgba(255,255,255,.3);
   }
 
   label {
@@ -125,4 +125,26 @@
     ;
   }
   
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  'nav nav'
+  'live cont'
+  ;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.live {
+  grid-area: live;
+}
+
+.cont {
+  grid-area: cont;
 }

@@ -75,7 +75,7 @@ function Signup() {
 
         <div className="df text-grey-dark mt-6">
           Already have an account?
-          <Link className="text-blue-600 hover:underline" to='/'>
+          <Link className="text-blue-600 hover:underline" to='/login'>
             Log in
           </Link>
         </div>
