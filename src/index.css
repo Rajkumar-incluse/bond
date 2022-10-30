@@ -126,25 +126,3 @@
   }
   
 }
-
-.home {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  'nav nav'
-  'live cont'
-  ;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.live {
-  grid-area: live;
-}
-
-.cont {
-  grid-area: cont;
-}
