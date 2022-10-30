@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import live from "../../constants/live";
+import Details from './Modals/Details';
 
 function LiveC() {
+  const [open, setOpen] = useState("")
+
+  const updateOpen = id => setOpen(id)
+
+  const closeModal = () => setOpen("")
+
   return (
     <section className="dfc h-full border-r border-[rgba(255,255,255,.3)] overflow-y-hidden">
       <div className="df py-2 px-6 border-b border-[rgba(255,255,255,.3)]">
@@ -12,7 +20,7 @@ function LiveC() {
         </div>
       </div>
 
-      <div className="scroll-y">
+      <div className="scroll-y overflow-x-auto">
         <table className="w-full table-fixed">
           <thead>
             <tr className="sticky top-0 text-sm bg-slate-900 shadow-[0_1px_3px_0_rgba(255,255,255,.1)] z-1">
@@ -30,8 +38,12 @@ function LiveC() {
 
           <tbody>
             {
-              live.map((li, i) => (
-                <tr key={i} className="hover:bg-[rgba(255,255,255,.1)] cursor-pointer group">
+              live.map(li => (
+                <tr
+                  key={li.id}
+                  className="hover:bg-[rgba(255,255,255,.1)] cursor-pointer group"
+                  onClick={() => updateOpen(li.id)}
+                >
                   <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.securityCode} </td>
                   <td className="px-4 py-2 text-sm font-medium opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.issuerName} </td>
                   <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.couponRate} </td>
@@ -55,6 +67,15 @@ function LiveC() {
           </tbody>
         </table>
       </div>
+
+      {
+        open &&
+        <Details
+          isOpen
+          data={live.find(li => li.id === open)}
+          closeModal={closeModal}
+        />
+      }
     </section>
   )
 }

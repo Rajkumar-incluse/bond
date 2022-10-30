@@ -125,4 +125,17 @@
     ;
   }
   
+  
+  /* Modal */
+  .modal-wrapper {
+    @apply relative z-50;
+  }
+
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-25;
+  }
+    
+  .modal-content {
+    @apply p-4 lg:p-6 rounded-2xl bg-white shadow-xl transition-all;
+  }  
 }
