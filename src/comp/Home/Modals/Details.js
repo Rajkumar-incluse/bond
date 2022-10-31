@@ -58,6 +58,14 @@ function Details({ isOpen, data, closeModal }) {
         />
       </div>
 
+      <select className='my-4'>
+        <option value="">Bond Details</option>
+      </select>
+
+      <select className='mb-4' disabled>
+        <option value="">Price Details</option>
+      </select>
+
       <div className='df justify-center flex-wrap gap-8 max-w-md mt-6 mx-auto'>
         <button className='flex-auto rounded-md text-white bg-emerald-400 hover:bg-emerald-700'>
           Buy
