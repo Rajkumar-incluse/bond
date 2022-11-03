@@ -83,44 +83,46 @@ function MyAccount() {
 
             <tbody>
               {
-                live.map(li => (
-                  <tr
-                    key={li.id}
-                    className="hover:bg-[rgba(255,255,255,.1)] cursor-pointer group"
-                    onClick={() => updateOpen(li.id, "Sell")}
-                  >
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.securityCode} </td>
-                    <td className="px-4 py-2 text-sm font-medium opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.issuerName} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.couponRate} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.faceValue} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.ltp} </td>
-                    <td className="px-4 py-2 text-xs opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.creditRating} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.maturityDate} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
-                      <button className="w-20 px-3 py-1.5 rounded border border-emerald-600">
-                        {li.bidPrice}
-                      </button>
-                    </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
-                      <button className="w-20 px-3 py-1.5 rounded border border-yellow-600">
-                        {li.askPrice}
-                      </button>
-                    </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.volumn} </td>
-                    <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
-                      <button
-                        className='px-3 py-1.5 rounded border border-red-500 hover:bg-red-500 hover:text-white'
-                        onClick={e => {
-                          e.stopPropagation()
-                          updateOpen(li.id, "Detokenzise")
-                        }}
-                      >
-                        Detokenize
-                      </button>
-                    </td>
+                live
+                  .filter((a, i) => [2, 3, 7, 8, 13, 17].includes(i))
+                  .map(li => (
+                    <tr
+                      key={li.id}
+                      className="hover:bg-[rgba(255,255,255,.1)] cursor-pointer group"
+                      onClick={() => updateOpen(li.id, "Sell")}
+                    >
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.securityCode} </td>
+                      <td className="px-4 py-2 text-sm font-medium opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.issuerName} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.couponRate} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.faceValue} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.ltp} </td>
+                      <td className="px-4 py-2 text-xs opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100"> {li.creditRating} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.maturityDate} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
+                        <button className="w-20 px-3 py-1.5 rounded border border-emerald-600">
+                          {li.bidPrice}
+                        </button>
+                      </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
+                        <button className="w-20 px-3 py-1.5 rounded border border-yellow-600">
+                          {li.askPrice}
+                        </button>
+                      </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.volumn} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
+                        <button
+                          className='px-3 py-1.5 rounded border border-red-500 hover:bg-red-500 hover:text-white'
+                          onClick={e => {
+                            e.stopPropagation()
+                            updateOpen(li.id, "Detokenzise")
+                          }}
+                        >
+                          Detokenize
+                        </button>
+                      </td>
 
-                  </tr>
-                ))
+                    </tr>
+                  ))
               }
             </tbody>
           </table>
