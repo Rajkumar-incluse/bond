@@ -12,6 +12,7 @@ const live = [
     askPrice: "999.99",
     yield: "6.85",
     volumn: 20000,
+    noOfToken: 120000,
   },
   {
     id: "2",
@@ -26,6 +27,7 @@ const live = [
     askPrice: "995.23",
     yield: "7.85",
     volumn: 300000,
+    noOfToken: 170000,
   },
   {
     id: "3",
@@ -40,6 +42,7 @@ const live = [
     askPrice: "1000",
     yield: "8.54",
     volumn: 1000000,
+    noOfToken: 106000,
   },
   {
     id: "4",
@@ -54,6 +57,7 @@ const live = [
     askPrice: "998.94",
     yield: "7.81",
     volumn: 70000,
+    noOfToken: 19900,
   },
   {
     id: "5",
@@ -68,6 +72,7 @@ const live = [
     askPrice: "1999.54",
     yield: "10.08",
     volumn: 108000,
+    noOfToken: 70000,
   },
   {
     id: "6",
@@ -82,6 +87,7 @@ const live = [
     askPrice: "1000.5",
     yield: "7.22",
     volumn: 3000000,
+    noOfToken: 90000,
   },
   {
     id: "7",
@@ -96,6 +102,7 @@ const live = [
     askPrice: "1000",
     yield: "8",
     volumn: 70000,
+    noOfToken: 83000,
   },
   {
     id: "8",
@@ -110,6 +117,7 @@ const live = [
     askPrice: "1000.23",
     yield: "7.3",
     volumn: 800000,
+    noOfToken: 520000,
   },
   {
     id: "9",
@@ -124,6 +132,7 @@ const live = [
     askPrice: "1000.71",
     yield: "9.39",
     volumn: 4000000,
+    noOfToken: 820000,
   },
   {
     id: "10",
@@ -138,6 +147,7 @@ const live = [
     askPrice: "999.66",
     yield: "8.25",
     volumn: 1000000,
+    noOfToken: 200800,
   },
   {
     id: "11",
@@ -152,6 +162,7 @@ const live = [
     askPrice: "4000.24",
     yield: "7.94",
     volumn: 90000,
+    noOfToken: 96200,
   },
   {
     id: "12",
@@ -166,6 +177,7 @@ const live = [
     askPrice: "1023.62",
     yield: "8.32",
     volumn: 700000,
+    noOfToken: 120000,
   },
   {
     id: "13",
@@ -180,6 +192,7 @@ const live = [
     askPrice: "2999.71",
     yield: "7.58",
     volumn: 900000,
+    noOfToken: 72000,
   },
   {
     id: "14",
@@ -194,6 +207,7 @@ const live = [
     askPrice: "999.9",
     yield: "7.85",
     volumn: 500000,
+    noOfToken: 45800,
   },
   {
     id: "15",
@@ -208,6 +222,7 @@ const live = [
     askPrice: "2000.28",
     yield: "7.6",
     volumn: 600000,
+    noOfToken: 260000,
   },
   {
     id: "16",
@@ -222,6 +237,7 @@ const live = [
     askPrice: "999.21",
     yield: "7.62",
     volumn: 8000000,
+    noOfToken: 270000,
   },
   {
     id: "17",
@@ -236,6 +252,7 @@ const live = [
     askPrice: "1034.62",
     yield: "7.5",
     volumn: 68000,
+    noOfToken: 120000,
   },
   {
     id: "18",
@@ -250,6 +267,7 @@ const live = [
     askPrice: "1000.85",
     yield: "7.53",
     volumn: 750000,
+    noOfToken: 100000,
   },
   {
     id: "19",
@@ -264,6 +282,7 @@ const live = [
     askPrice: "1007.19",
     yield: "6",
     volumn: 690000,
+    noOfToken: 270000,
   },
   {
     id: "20",
@@ -278,6 +297,7 @@ const live = [
     askPrice: "3002.2",
     yield: "8.05",
     volumn: 10000000,
+    noOfToken: 120000,
   },
 ]
 

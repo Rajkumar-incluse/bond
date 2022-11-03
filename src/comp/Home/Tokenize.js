@@ -16,7 +16,7 @@ function Tokenize() {
       <Nav />
 
       <section className="dfc h-full border-r border-[rgba(255,255,255,.3)] overflow-y-hidden">
-        <h1 className='py-2 text-2xl text-center border-b border-[rgba(255,255,255,.6)]'>Your token holdings with MBE Costodian</h1>
+        <h1 className='py-2 text-2xl text-center border-b border-[rgba(255,255,255,.6)]'>Your bond holdings with MBE Costodian</h1>
 
         <div className="scroll-y overflow-x-auto">
           <table className="w-full table-fixed">

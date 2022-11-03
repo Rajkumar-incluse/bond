@@ -40,6 +40,10 @@ function Sell({ isOpen, data, closeModal }) {
             value={data.yield}
           />
           <Input
+            lable='Number of Tokens'
+            value={data.noOfToken}
+          />
+          <Input
             lable='Currency'
             value="Rupee"
           />
