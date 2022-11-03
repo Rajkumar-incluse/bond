@@ -11,6 +11,7 @@ const live = [
     bidPrice: "998.49",
     askPrice: "999.99",
     yield: "6.85",
+    volumn: 20000,
   },
   {
     id: "2",
@@ -24,6 +25,7 @@ const live = [
     bidPrice: "993.73",
     askPrice: "995.23",
     yield: "7.85",
+    volumn: 300000,
   },
   {
     id: "3",
@@ -37,6 +39,7 @@ const live = [
     bidPrice: "998.5",
     askPrice: "1000",
     yield: "8.54",
+    volumn: 1000000,
   },
   {
     id: "4",
@@ -50,6 +53,7 @@ const live = [
     bidPrice: "997.44",
     askPrice: "998.94",
     yield: "7.81",
+    volumn: 70000,
   },
   {
     id: "5",
@@ -63,6 +67,7 @@ const live = [
     bidPrice: "1997.79",
     askPrice: "1999.54",
     yield: "10.08",
+    volumn: 108000,
   },
   {
     id: "6",
@@ -76,6 +81,7 @@ const live = [
     bidPrice: "998.75",
     askPrice: "1000.5",
     yield: "7.22",
+    volumn: 3000000,
   },
   {
     id: "7",
@@ -89,6 +95,7 @@ const live = [
     bidPrice: "997.7",
     askPrice: "1000",
     yield: "8",
+    volumn: 70000,
   },
   {
     id: "8",
@@ -102,6 +109,7 @@ const live = [
     bidPrice: "997.93",
     askPrice: "1000.23",
     yield: "7.3",
+    volumn: 800000,
   },
   {
     id: "9",
@@ -115,6 +123,7 @@ const live = [
     bidPrice: "999.46",
     askPrice: "1000.71",
     yield: "9.39",
+    volumn: 4000000,
   },
   {
     id: "10",
@@ -128,6 +137,7 @@ const live = [
     bidPrice: "998.41",
     askPrice: "999.66",
     yield: "8.25",
+    volumn: 1000000,
   },
   {
     id: "11",
@@ -141,6 +151,7 @@ const live = [
     bidPrice: "3998.99",
     askPrice: "4000.24",
     yield: "7.94",
+    volumn: 90000,
   },
   {
     id: "12",
@@ -154,6 +165,7 @@ const live = [
     bidPrice: "1022.37",
     askPrice: "1023.62",
     yield: "8.32",
+    volumn: 700000,
   },
   {
     id: "13",
@@ -167,6 +179,7 @@ const live = [
     bidPrice: "2998.46",
     askPrice: "2999.71",
     yield: "7.58",
+    volumn: 900000,
   },
   {
     id: "14",
@@ -180,6 +193,7 @@ const live = [
     bidPrice: "997.65",
     askPrice: "999.9",
     yield: "7.85",
+    volumn: 500000,
   },
   {
     id: "15",
@@ -193,6 +207,7 @@ const live = [
     bidPrice: "1998.03",
     askPrice: "2000.28",
     yield: "7.6",
+    volumn: 600000,
   },
   {
     id: "16",
@@ -206,6 +221,7 @@ const live = [
     bidPrice: "996.96",
     askPrice: "999.21",
     yield: "7.62",
+    volumn: 8000000,
   },
   {
     id: "17",
@@ -219,6 +235,7 @@ const live = [
     bidPrice: "1033.15",
     askPrice: "1034.62",
     yield: "7.5",
+    volumn: 68000,
   },
   {
     id: "18",
@@ -232,6 +249,7 @@ const live = [
     bidPrice: "999.38",
     askPrice: "1000.85",
     yield: "7.53",
+    volumn: 750000,
   },
   {
     id: "19",
@@ -245,6 +263,7 @@ const live = [
     bidPrice: "1005.72",
     askPrice: "1007.19",
     yield: "6",
+    volumn: 690000,
   },
   {
     id: "20",
@@ -258,6 +277,7 @@ const live = [
     bidPrice: "3000.73",
     askPrice: "3002.2",
     yield: "8.05",
+    volumn: 10000000,
   },
 ]
 

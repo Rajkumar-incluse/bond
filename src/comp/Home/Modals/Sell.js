@@ -1,7 +1,7 @@
 import Modal, { ModalHeader } from '../../UIComp/Modal';
 import Input from '../common/Input';
 
-function Tokenise({ isOpen, data, closeModal }) {
+function Sell({ isOpen, data, closeModal }) {
   return (
     <Modal
       isOpen={isOpen}
@@ -9,7 +9,7 @@ function Tokenise({ isOpen, data, closeModal }) {
       contentCls="dfc xs:min-w-[400px] max-h-[80vh]"
     >
       <ModalHeader
-        title='Tokenize your bond'
+        title='Bond Details'
         closeModal={closeModal}
       />
 
@@ -45,6 +45,14 @@ function Tokenise({ isOpen, data, closeModal }) {
           />
         </div>
 
+        <select className='my-4'>
+          <option value="">Bond Details</option>
+        </select>
+
+        <select disabled>
+          <option value="">Price Details</option>
+        </select>
+
         <div className='grid md:grid-cols-2 gap-4 my-4'>
           <div>
             <label className='mb-1 font-medium' htmlFor="">Number of Tokens</label>
@@ -59,10 +67,10 @@ function Tokenise({ isOpen, data, closeModal }) {
       </div>
 
       <button className='block w-1/2 mx-auto rounded-md text-white bg-emerald-400 hover:bg-emerald-700'>
-        Tokenise
+        Sell
       </button>
     </Modal>
   )
 }
 
-export default Tokenise
+export default Sell

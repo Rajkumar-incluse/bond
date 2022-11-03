@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import live from "../../constants/live";
-import Details from './Modals/Details';
+import Buy from './Modals/Buy';
 
 function LiveC() {
   const [open, setOpen] = useState("")
@@ -70,7 +70,7 @@ function LiveC() {
 
       {
         open &&
-        <Details
+        <Buy
           isOpen
           data={live.find(li => li.id === open)}
           closeModal={closeModal}
