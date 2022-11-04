@@ -76,8 +76,8 @@ function MyAccount() {
                 <td className="w-32 px-4 py-2 text-center">Maturity Date</td>
                 <td className="w-28 px-4 py-2 text-center">Bid Price</td>
                 <td className="w-28 px-4 py-2 text-center">Ask Price</td>
-                <td className="w-24 px-4 py-2 text-center">No. of Tokens</td>
-                <td className="w-24 px-4 py-2 text-center">Volume</td>
+                <td className="w-28 px-4 py-2 text-center">No. of Tokens</td>
+                <td className="w-28 px-4 py-2 text-center">Volume in my account</td>
                 <td className="w-32 px-4 py-2"></td>
               </tr>
             </thead>
@@ -109,7 +109,7 @@ function MyAccount() {
                           {li.askPrice}
                         </button>
                       </td>
-                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.noOfToken} </td>
+                      <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.volumn / li.faceValue} </td>
                       <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center"> {li.volumn} </td>
                       <td className="px-4 py-2 text-sm opacity-80 border-b border-[rgba(255,255,255,.3)] group-hover:opacity-100 text-center">
                         <button

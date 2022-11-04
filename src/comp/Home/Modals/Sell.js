@@ -41,21 +41,13 @@ function Sell({ isOpen, data, closeModal }) {
           />
           <Input
             lable='Number of Tokens'
-            value={data.noOfToken}
+            value={data.volumn / data.faceValue}
           />
           <Input
             lable='Currency'
             value="Rupee"
           />
         </div>
-
-        <select className='my-4'>
-          <option value="">Bond Details</option>
-        </select>
-
-        <select disabled>
-          <option value="">Price Details</option>
-        </select>
 
         <div className='grid md:grid-cols-2 gap-4 my-4'>
           <div>
